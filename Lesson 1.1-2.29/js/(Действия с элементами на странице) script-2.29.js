@@ -82,7 +82,7 @@ wrapper.appenddChild(div); // тоже самое что просто append
 
 wrapper.insertBefore(div, hearts[0]) // когда не было просто .before, .after, .prepend то использовали это. Тут задаются аргументы. Где первый аргуемнт это что вставляем, а второй куда
 
-wrapper.removeChild(hearts[1]);// раньше не было также removeи использовали этот
+wrapper.removeChild(hearts[1]);// раньше не было также remove и использовали этот
 
 wrapper.replaceChild(circles[0], hearts[0]); // раеьше не было replaceWith и использовали эту. первый аргумент на который хотим поменять, второй тот который меняется
 
