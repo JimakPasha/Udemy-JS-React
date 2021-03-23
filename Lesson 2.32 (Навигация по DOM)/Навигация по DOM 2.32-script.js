@@ -1,6 +1,6 @@
 // Навигация по DOM - элементам, data - атрибуты, преимущество for/of
 console.log(document.body); // мы можем обратиться к бади
-console.log(document.body); // можем head и тд.
+console.log(document.head); // можем head и тд.
 
 
 console.log(document.documentElement); // получаем штмл со всем содержимым
@@ -12,7 +12,7 @@ console.log(document.body.childNodes); // тут ищем ноды(узлы) к�
 
 // есть свойства, которые позволяют получить первого или последнего ребёнка
 console.log(document.body.firstChild); // получим ноду текст
-console.log(document.body.lastChild); // получимы script
+console.log(document.body.lastChild); // получим ноду текст
 
 
 console.log(document.querySelector('#current').parentNode); // получим div с классом first

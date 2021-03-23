@@ -6,7 +6,6 @@ const box = document.getElementById('box'); // найти элемент по а
 console.log(box);
 
 
-
 const btns = document.getElementsByTagName('button'); // мы получаем не один элемент, а псевдомассив. Помним что псевдомассив не содержит стандартных методов.
 console.log(btns); // мы получаем хтмл коллекцию псевдоэлементов
 
