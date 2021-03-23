@@ -24,9 +24,9 @@ const num = 50;
 if (num < 49){   
   console.log('Error');
 } else if (num > 100){
-  console.log('Nooo');
-} else {
   console.log('yes');
+} else {
+  console.log('no');
 }
 
 // тернарный оператор. он позволяет экономить место и сокращать код. но в начале его лучше особо часто не юзать
