@@ -37,13 +37,13 @@ class ColoredRectangleWidthText extends Rectangle {
 		// this.width = width;
 		// this.height = height;
 		// но этих свойств может быть очень много, поэтому используем метод:
-		super(); // вызывает суперкоструктор родителя, т.е. того от кого наследуется. !!! super - всегда должен быть на первом месте в конструкторе !!! Во внутрь super можем прописать только те свойства которые нам нужно например только super(height); через запятую.
+		super(width, height); // вызывает суперкоструктор родителя, т.е. того от кого наследуется. !!! super - всегда должен быть на первом месте в конструкторе !!! Во внутрь super можем прописать только те свойства которые нам нужно например только super(height); через запятую.
 		this.text = text;
 		this.bgColor = bgColor;
 	}
 
 	showMyProps() {
-		console.log(`Текст: ${this.text}, цвет: ${this.bgColor}`)
+		console.log(`Текст: ${this.text}, цвет: ${this.bgColor}`);
 	}
 }
 

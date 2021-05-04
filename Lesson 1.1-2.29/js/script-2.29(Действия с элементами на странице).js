@@ -56,7 +56,7 @@ const box = document.getElementById('box'),
       const text = document.createTextNode('Тут текст'); // используется редко. 
       // часто называют не элементы а ноды.
 
-      div.classList.add('black');
+      div.classList.add('black'); // добавим div класс
 
 // ----------------------------------------------------
       // современные методы. они не работают в старом браузере
