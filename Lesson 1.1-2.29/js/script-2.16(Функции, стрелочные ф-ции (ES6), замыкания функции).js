@@ -82,3 +82,54 @@ const calc2 = (a, b) => { return a + b };
 const calc3 = (a, b) => a + b ; // Если одна строчка после стрелки, то можно так писать  
 
 const calc4 = a => a + b; // А если один аргумент, то можно так
+
+
+
+// --------------------------------------------------------------------------------
+// Про замыкания от Владилена Минина
+// Замыкание это функция внутри другой функции
+
+// пример 1
+
+function createCalcFunction(n) {
+	return function () {
+		console.log(1000 * n);
+	}
+}
+
+const calc = createCalcFunction(42);
+calc();
+
+// пример 2
+
+function createIncremantor(n) {
+	return function (num) {
+		return n + num;
+	}
+}
+
+const addOne = createIncremantor(1);
+const addTen = createIncremantor(10);
+
+console.log(addOne(10));
+console.log(addOne(41));
+
+console.log(addTen(10));
+console.log(addTen(41));
+
+// пример 3
+
+function urlGenerator(domain) {
+	return function (url) {
+		return `https://${url}.${domain}`;
+	}
+}
+
+const comUrl = urlGenerator('com');
+const ruUrl = urlGenerator('ru');
+
+console.log(comUrl('google'));
+console.log(comUrl('vk'));
+
+console.log(ruUrl('yandex'));
+console.log(ruUrl('eurosport'));
